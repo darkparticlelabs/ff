@@ -1,0 +1,166 @@
+body {
+    background-color: black;
+    font-family: 'Conv_PressStart2P', Sans-Serif;
+    color: whitesmoke;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.header {
+    font-family: 'Conv_PressStart2P', Sans-Serif;
+    padding-top: 2%;
+    width: 100%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.hint {
+    font-family: 'Conv_Sansus Webissimo-Regular', Sans-Serif;
+    width: 800px;
+    margin: 10px auto;
+    text-align: left;
+    border: 1px;
+    padding: 10px;
+}
+.menu_div{
+    width: 20%;
+    height: 20%;
+    background-position: 50% 50%;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+}
+.menu_div .h1{
+    font-size: 16px;
+}
+.menu_div .div_content{
+    text-align: left;
+    padding: 2em;
+}
+.menu_div > img{
+    min-height:70px;
+    min-width:70px;
+}
+.menu_pic{
+    height: 70px;
+    width: 70px;
+    /*keeps the pictures on the bottom*/
+    position: fixed;
+    bottom: 4%;
+}
+#league{
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    vertical-align: middle;
+    height: 100%;
+
+}
+.league_class{
+    display: table-cell;
+}
+.standings{
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 34%;
+}
+.players_pic{
+    width: 50px;
+    height: 70px;
+}
+#game_table{
+    margin-left:auto;
+    margin-right:auto;
+}
+/*The menu picture ids*/
+#chest{
+    left: calc(14% - 35px);
+}
+#trophy{
+    left: calc(38% - 35px);
+}
+#coins{
+    left: calc(62% - 35px);
+}
+#plane{
+    left: calc(86% - 35px);
+}
+/*The menu div ids*/
+#history {
+    margin-left: 4%;
+    z-index: 5;
+}
+#stats {
+    margin-left: 28%;
+    z-index: 4;
+}
+
+#dues {
+    margin-left: 52%;
+    z-index: 3;
+}
+#trip {
+    margin-left: 76%;
+    z-index: 2;
+}
+
+/*separate hover methods, since doing it in the superclass changes all the alignment*/
+#history:hover {
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    margin-left: 0%;
+}
+
+#stats:hover {
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    margin-left: 0%;
+}
+
+#dues:hover {
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    margin-left: 0%;
+}
+
+#trip:hover {
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    margin-left: 0%;
+}
+#game_table .h3{
+    font-size: 36px;
+}
+#game_table{
+    align-content: center;
+    text-align: center;
+}
+/*div hover actions*/
+.div_content{
+    letter-spacing: 2px;
+    display: none;
+}
+.div_content > ul > li > b > h3 {
+
+    font-size: 24px;
+}
+.menu_div:hover .div_content{
+    display: block;
+}
+.menu_div:hover ~ .league_class{
+    display: none;
+}
